@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Environment lokal dan secrets
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Hasil build dan test
+dist/
+coverage/
+
+# File log
+*.log
+
+# Prisma Client hasil generate
+backend/prisma/generated/
+
+# File sistem operasi
+.DS_Store
+Thumbs.db

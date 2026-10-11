@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adjustable Chill Pillow | All Sleep Positions | Leesa</title>
+  <meta name="description" content="Adjustable Chill Pillow - bantal dengan fill yang dapat disesuaikan dan cover pendingin. Tersedia Queen dan King." />
+  <link rel="preconnect" href="https://images.contentstack.io" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Skip links -->
+  <a href="#main-content" class="skip-link">Skip to Content</a>
+  <a href="#atc-section" class="skip-link">Skip to Add to Cart</a>
+
+  <!-- ── TOP BAR ── -->
+  <div class="top-bar" id="top-bar">
+    <div class="top-bar-inner container">
+      <div class="top-bar-promo">
+        <a id="top-bar-promo-link" href="#" class="top-bar-promo-text"></a>
+        <button id="top-bar-details" class="top-bar-details-btn">Details</button>
+      </div>
+      <nav class="top-bar-links" aria-label="Utilitas">
+        <ul id="top-bar-nav" class="top-bar-nav-list"></ul>
+      </nav>
+    </div>
+  </div>
+
+  <!-- ── HEADER ── -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner container">
+      <button class="hamburger" id="hamburger-btn" aria-label="Buka menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <a href="#" class="logo" aria-label="Leesa Sleep – Beranda">
+        <svg class="logo-svg" viewBox="0 0 80 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <text x="0" y="20" font-family="Georgia,serif" font-size="22" font-weight="700" fill="#2D6A4F">leesa</text>
+        </svg>
+      </a>
+      <nav class="desktop-nav" aria-label="Navigasi utama">
+        <ul id="main-nav-list" class="nav-list"></ul>
+      </nav>
+      <div class="header-actions">
+        <a href="tel:18443353372" class="header-phone" aria-label="Telepon Leesa">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.6 19.79 19.79 0 0 1 1.62 5.1 2 2 0 0 1 3.59 3h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 10.6a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 17.92z"/></svg>
+          <span>844-335-3372</span>
+        </a>
+        <button class="cart-btn" aria-label="Keranjang belanja">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          <span class="cart-label">Cart</span>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile Nav -->
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Navigasi mobile" hidden>
+      <ul id="mobile-nav-list" class="mobile-nav-list"></ul>
+    </nav>
+  </header>
+
+  <!-- ── STICKY BAR (F10) ── -->
+  <div class="sticky-bar" id="sticky-bar" aria-hidden="true" aria-label="Sticky purchase bar">
+    <div class="sticky-inner container">
+      <span class="sticky-name" id="sticky-name"></span>
+      <div class="sticky-right">
+        <span class="sticky-meta" id="sticky-meta"></span>
+        <button class="btn-atc btn-atc--sticky" id="sticky-atc">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── MAIN ── -->
+  <main id="main-content">
+
+    <!-- Breadcrumb (F03) -->
+    <nav class="breadcrumb container" aria-label="Breadcrumb">
+      <ol id="breadcrumb-list" class="breadcrumb-list"></ol>
+    </nav>
+
+    <!-- ── PRODUCT SECTION ── -->
+    <section class="product-section container" aria-label="Detail produk">
+      <div class="product-layout">
+
+        <!-- Gallery (F04) -->
+        <div class="gallery-col">
+          <div class="gallery">
+            <div class="gallery-badge-wrap">
+              <span class="gallery-badge" id="gallery-badge"></span>
+            </div>
+            <!-- Main image -->
+            <div class="gallery-stage" id="gallery-stage">
+              <button class="gallery-arrow gallery-arrow--prev" id="gal-prev" aria-label="Sebelumnya">
+                <svg width="10" height="18" viewBox="0 0 10 18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 1 1 9 9 17"/></svg>
+              </button>
+              <img id="gallery-main" class="gallery-main-img" src="" alt="" width="600" height="600" loading="eager" />
+              <button class="gallery-arrow gallery-arrow--next" id="gal-next" aria-label="Berikutnya">
+                <svg width="10" height="18" viewBox="0 0 10 18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 1 9 9 1 17"/></svg>
+              </button>
+            </div>
+            <!-- Thumbnails -->
+            <div class="gallery-thumbs" id="gallery-thumbs" role="list" aria-label="Thumbnail gambar produk"></div>
+          </div>
+        </div>
+
+        <!-- Product Info -->
+        <div class="info-col" id="info-col">
+          <h1 class="product-title" id="product-title"></h1>
+
+          <!-- Tabs (F05) -->
+          <div class="tabs" role="tablist" aria-label="Info produk">
+            <button class="tab-btn tab-btn--active" id="tab-benefits" role="tab" aria-selected="true"  aria-controls="panel-benefits" data-tab="benefits">Benefits</button>
+            <button class="tab-btn"                 id="tab-bestfor"  role="tab" aria-selected="false" aria-controls="panel-bestfor"  data-tab="bestFor">Best For</button>
+            <button class="tab-btn"                 id="tab-bonuses"  role="tab" aria-selected="false" aria-controls="panel-bonuses"  data-tab="bonuses">Bonuses</button>
+          </div>
+          <ul class="tab-panel tab-panel--active" id="panel-benefits" role="tabpanel" aria-labelledby="tab-benefits"></ul>
+          <ul class="tab-panel" id="panel-bestfor"  role="tabpanel" aria-labelledby="tab-bestfor"  hidden></ul>
+          <ul class="tab-panel" id="panel-bonuses"  role="tabpanel" aria-labelledby="tab-bonuses"  hidden></ul>
+
+          <!-- Price (F06) -->
+          <div class="price-block" id="atc-section" aria-label="Harga">
+            <div class="price-row">
+              <span class="price-badge" id="price-badge"></span>
+              <span class="price-sale"  id="price-sale"></span>
+              <span class="price-orig"  id="price-orig"></span>
+            </div>
+            <p class="price-save" id="price-save"></p>
+          </div>
+
+          <!-- Size (F07) -->
+          <div class="form-row">
+            <label class="form-label" for="size-select">Choose your size:</label>
+            <div class="select-wrap">
+              <select id="size-select" class="form-select" aria-label="Pilih ukuran"></select>
+              <span class="select-chevron" aria-hidden="true">
+                <svg width="12" height="8" viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="1 1 6 7 11 1"/></svg>
+              </span>
+            </div>
+          </div>
+
+          <!-- Qty (F08) -->
+          <div class="form-row">
+            <label class="form-label" for="qty-select">Select Accessory Quantity</label>
+            <div class="qty-label-row">
+              <span class="qty-label">Qty:</span>
+              <div class="select-wrap select-wrap--sm">
+                <select id="qty-select" class="form-select" aria-label="Pilih jumlah"></select>
+                <span class="select-chevron" aria-hidden="true">
+                  <svg width="10" height="7" viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="1 1 6 7 11 1"/></svg>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Add to Cart (F09) -->
+          <div id="atc-section">
+            <button class="btn-atc btn-atc--main" id="atc-btn" aria-live="polite"></button>
+            <p class="atc-validation" id="atc-validation" role="alert" hidden></p>
+          </div>
+
+          <!-- Need Help (F16) -->
+          <div class="need-help" id="need-help">
+            <img class="need-help-img" src="https://images.contentstack.io/v3/assets/bltdab0c7b06198f4c2/bltead190bb9a77f8bf/641cb2785278f81d67889181/leesa_best_mattress_help_(1).jpg" alt="Leesa Comfort Crew" width="48" height="48" loading="lazy" />
+            <div class="need-help-body">
+              <strong id="need-help-title"></strong>
+              <p id="need-help-desc"></p>
+            </div>
+            <button class="btn-chat" id="need-help-chat">Chat</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FEATURES (F11) ── -->
+    <section class="features-section" aria-label="Keunggulan produk">
+      <div class="container">
+        <p class="features-eyebrow">Fluff, adjust, and fall in love</p>
+        <p class="features-sub">The Adjustable Chill Pillow lets you decide what the perfect night feels like. It’s designed to be “just right”—no matter how you sleep.</p>
+        <div class="features-grid" id="features-grid"></div>
+      </div>
+    </section>
+
+    <!-- ── DETAIL (F12) ── -->
+    <section class="detail-section" aria-label="Detail produk mendalam">
+      <div class="container">
+        <h2 class="detail-heading">This is the fluff dreams are made of</h2>
+        <p class="detail-sub">Chill factor? Absolutely. Cloud-like support? Nailed it. A mix of foam-and-fiber floofiness you didn’t know you needed? Yours for the taking.</p>
+        <div id="detail-container"></div>
+      </div>
+    </section>
+
+    <!-- ── FAQ (F13/F14) ── -->
+    <section class="faq-section" aria-label="FAQ">
+      <div class="container">
+        <h2 class="faq-heading">All your questions answered</h2>
+        <div class="accordion" id="accordion"></div>
+      </div>
+    </section>
+
+    <!-- ── SOCIAL PROOF (F15) ── -->
+    <section class="social-section" aria-label="Social impact">
+      <div class="container">
+        <div class="social-inner">
+          <div class="social-counter">
+            <span class="counter-num" id="counter-num" data-target="43000">0</span>
+            <span class="counter-label">MATTRESSES DONATED</span>
+          </div>
+          <div class="social-text">
+            <h2 id="social-heading"></h2>
+            <p id="social-desc"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER (F18) ── -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h3 class="footer-col-head">Shop</h3><ul id="f-shop" class="footer-links"></ul></div>
+        <div><h3 class="footer-col-head">About</h3><ul id="f-about" class="footer-links"></ul></div>
+        <div><h3 class="footer-col-head">Support</h3><ul id="f-support" class="footer-links"></ul></div>
+        <div class="footer-contact">
+          <h3 class="footer-col-head">We’re here to help</h3>
+          <p id="f-hours" class="footer-hours"></p>
+          <a id="f-phone" href="tel:18443353372" class="footer-phone"></a>
+          <!-- Newsletter F17 -->
+          <div class="newsletter">
+            <p class="newsletter-label">Sign up for your exclusive offer:</p>
+            <div class="newsletter-row">
+              <input type="email" id="nl-email" class="nl-input" placeholder="Your email address" aria-label="Alamat email" />
+              <button id="nl-btn" class="btn-nl">Join</button>
+            </div>
+            <p id="nl-msg" class="nl-msg" role="alert" hidden></p>
+          </div>
+          <div id="social-links" class="social-links" aria-label="Sosial media Leesa"></div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p id="f-copy" class="f-copy"></p>
+        <ul id="f-legal" class="f-legal"></ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

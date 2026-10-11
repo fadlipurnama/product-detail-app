@@ -1,0 +1,14 @@
+{
+  "name": "leesa-product-detail",
+  "version": "1.0.0",
+  "description": "Halaman detail produk Leesa Adjustable Chill Pillow — integrasi API backend",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.3.5"
+  }
+}

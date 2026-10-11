@@ -1,0 +1,53 @@
+generator client {
+  provider = "prisma-client"
+  output   = "./generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Product {
+  id          BigInt           @id @default(autoincrement())
+  name        String           @db.VarChar(120)
+  price       Decimal          @db.Decimal(12, 2)
+  currency    String           @default("USD") @db.Char(3)
+  description String           @db.Text
+  images      ProductImage[]
+  variants    ProductVariant[]
+  createdAt   DateTime         @default(now()) @map("created_at") @db.Timestamptz(6)
+  updatedAt   DateTime         @updatedAt @map("updated_at") @db.Timestamptz(6)
+
+  @@map("products")
+  @@index([name], map: "products_name_idx")
+}
+
+model ProductImage {
+  id        BigInt   @id @default(autoincrement())
+  productId BigInt   @map("product_id")
+  imageUrl  String   @map("image_url") @db.Text
+  altText   String?  @map("alt_text") @db.VarChar(255)
+  position  Int      @default(0) @db.SmallInt
+  isPrimary Boolean  @default(false) @map("is_primary")
+  createdAt DateTime @default(now()) @map("created_at") @db.Timestamptz(6)
+  product   Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
+
+  @@unique([productId, position])
+  @@index([productId], map: "product_images_product_id_idx")
+  @@map("product_images")
+}
+
+model ProductVariant {
+  id        BigInt   @id @default(autoincrement())
+  productId BigInt   @map("product_id")
+  color     String?  @db.VarChar(50)
+  size      String?  @db.VarChar(50)
+  quantity  Int
+  createdAt DateTime @default(now()) @map("created_at") @db.Timestamptz(6)
+  updatedAt DateTime @updatedAt @map("updated_at") @db.Timestamptz(6)
+  product   Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
+
+  @@unique([productId, color, size], map: "product_variants_product_color_size_key")
+  @@index([productId], map: "product_variants_product_id_idx")
+  @@map("product_variants")
+}

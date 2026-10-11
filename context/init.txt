@@ -1,0 +1,9 @@
+Jadilah seorang Product Owner
+
+Context: Aku sedang membuat fitur 'Detail Produk' yang ada pada @project-AI/index.html. Saya ingin membuat PRD yang lengkap beserta schema, user story, acceptance criteria. 
+
+Spesification: Spesifikasi proyek REST API ini  menggunakan Express.js dengan method endpoint GET untuk mengambil data semua produk serta detail produk dan POST untuk menambahkan data produk baru lengkap dengan penerapan middleware validasi input pada setiap request body untuk memastikan integritas serta keamanan data sebelum diproses oleh server.
+
+Guardrails: Pedoman dari pengerjaan PRD ini mengacu pada [@api-project/Practical Guidance - Modern Back-End Development with AI.docx]. Untuk pedoman lainya ada di file [@project-AI/mini-prd.md].
+
+Output: file api-prd.md didalam folder context/api-prd.md
