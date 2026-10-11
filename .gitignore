@@ -16,6 +16,7 @@ coverage/
 
 # Prisma Client hasil generate
 backend/prisma/generated/
+readme-generatorai.md
 
 # File sistem operasi
 .DS_Store
